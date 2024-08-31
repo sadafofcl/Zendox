@@ -1,0 +1,34 @@
+{% extends "base.htm" %} {% block products %}
+
+<div class="p-top">
+    <div class="row-b">
+        <div class="row">
+            <span style="color: black;" class="material-symbols-outlined bbb">sell</span>
+            <div style="color: black; font-weight: 700;font-size:28px" class="s-item">Products</div>
+        </div>
+        <a href="/{{aaa}}/edit/products/add" class="add-pro">Add</a>
+    </div>
+</div>
+<div class="p-base">
+    <div style="height: 64px;"></div>
+    {% for i in data %}
+    <div class="row-a">
+        <div class="pp" onclick="window.location.href = '/{{aaa}}/product/{{i[0]}}';">
+            <div class="row-b">
+                <div class="row">
+                    <img class="p-saam" src="{{ i[3] }}" alt="">
+                    <div style="width:20px"></div>
+                    <div>
+                        <div class="p-naam">{{ i[2] }}</div>
+                        <div class="p-daam">Price: ₹ {{ i[4] }}</div>
+                        <a class="view-pro" href="/{{aaa}}/edit/product/{{i[0]}}">Edit</a>
+                    </div>
+                </div>
+                <a href="/{{aaa}}/{{ i[1] }}/DELETE-product/{{ i[0] }}" class="material-symbols-outlined saasy">delete</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div style="height: 64px;"></div>
+{%endblock%}

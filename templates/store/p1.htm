@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="/static/css/khukari.css">
+    <link rel="stylesheet" href="/static/css/store/p{{ qq }}.css">
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="row-b">
+            <Button onclick="window.location.href = '/{{aaa}}';" class="material-symbols-outlined s-icon">arrow_back_ios</Button>
+            <Button onclick="window.location.href = '/{{aaa}}/user/cart';" class="material-symbols-outlined s-icon">shopping_cart</Button>
+        </div>
+    </div>
+
+    <div style="height:67px"></div>
+
+    {% for i in items %}
+    <div class="row-a">
+        <div class="aaa">
+            <div class="name">{{ i[2] }}</div>
+            <img src="{{ i[3] }}" alt="">
+            <div class="sub">₹ {{ i[4] }}</div>
+            <form action="" method="post">
+                <input type="text" name="id" value="{{ i[0] }}">
+                <input type="text" name="sid" value="{{ i[1] }}">
+                <input type="text" name="name" value="{{ i[2] }}">
+                <input type="text" name="img" value="{{ i[3] }}">
+                <input type="text" name="price" value="₹ {{ i[4] }}">
+                <Button type="submit" class="cart">Buy</Button>
+            </form>
+            <div class="dis">Discription</div>
+            <div class="d">{{ i[5] }}</div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div style="height: 100px;"></div>
+
+</body>
+
+</html>

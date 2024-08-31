@@ -1,0 +1,89 @@
+.top-bar {
+    width: 100%;
+    height: 56px;
+    box-shadow: rgba(167, 167, 167, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+}
+
+.s-icon {
+    height: 56px;
+    width: 56px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+img {
+    margin-top: 20px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.sub {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: white;
+}
+
+.cart {
+    background-color: transparent;
+    border: solid 1px red;
+    color: red;
+    text-align: center;
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+}
+
+.dis {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.d {
+    color: white;
+}
+
+@media (min-width:900px) {
+    img {
+        width: 600px;
+    }
+    .ddddd {
+        width: 600px;
+    }
+    .d {
+        width: 600px;
+    }
+}
+
+@media (max-width: 900px) {
+    img {
+        width: calc(100vw - 20px);
+    }
+    .ddddd {
+        width: calc(100vw - 20px);
+    }
+    .d {
+        width: calc(100vw - 20px);
+    }
+}
+
+body {
+    background-color: #111;
+}
+
+input {
+    display: none;
+}

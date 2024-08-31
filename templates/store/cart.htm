@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="/static/css/khukari.css">
+    <link rel="stylesheet" href="/static/css/store/c{{ qq }}.css">
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="row-b">
+            <div class="row">
+                <a href="javascript:history.back()" class="material-symbols-outlined s-icon">arrow_back_ios</a>
+                <div class="name">Orders</div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <div style="height: 60px"></div>
+
+    {% for i in data %}
+    <div class="row-a">
+        <div class="pp" onclick="window.location.href = '/{{aaa}}/product/{{ i[0] }}';">
+            <div class="row-b">
+                <div class="row">
+                    <img class="p-saam" src="{{ i[4] }}" alt="">
+                    <div style="width:20px"></div>
+                    <div>
+                        <div class="p-naam">{{ i[3] }}</div>
+                        <div class="p-daam">Price: ₹ {{ i[5] }}</div>
+                        <div class="p-daam">quantity : 1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div style="height: 100px;"></div>
+
+</body>
+
+</html>

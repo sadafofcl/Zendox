@@ -1,0 +1,78 @@
+@media (min-width: 900px) {
+    .o-base {
+        width: calc(100vw - 300px);
+    }
+    .oo {
+        width: calc(100vw - 340px);
+    }
+    .ooo {
+        width: calc(100vw - 340px);
+    }
+}
+
+.o-top {
+    width: calc(100vw - 300px);
+    height: 56px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 300px;
+}
+
+.o-base {
+    overflow-y: auto;
+    margin-left: 290px;
+}
+
+.oo {
+    height: 70px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.ooo {
+    height: 120px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.o-hed {
+    font-size: 20px;
+    color: rgb(159, 168, 176);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.o-sub {
+    font-size: 20px;
+    font-weight: 600;
+    color: grey;
+}
+
+.o-div {
+    width: 1px;
+    height: 50px;
+    background-color: grey;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.o-view {
+    width: 60px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 20px;
+    background-color: white;
+    color: rgb(37, 130, 228);
+    border: solid 1px rgb(37, 130, 228);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}

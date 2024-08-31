@@ -1,0 +1,176 @@
+.top-bar {
+    width: 100%;
+    height: 56px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+    left: 0;
+}
+
+.s-icon {
+    height: 56px;
+    width: 56px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.m-head {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.s-name {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.top-h {
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.top-sub {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.shop-now {
+    border-radius: 50px;
+    height: 36px;
+    width: 120px;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+}
+
+.store-row {
+    padding-top: 30px;
+    color: white;
+}
+
+.row-bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-grid {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.pro-img {
+    width: 90%;
+    color: white;
+}
+
+.pro-h {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 6px;
+    color: white;
+}
+
+@media (min-width: 950px) {
+    .top-bar {
+        display: none;
+    }
+    .m-head {
+        display: none;
+    }
+    .top-img {
+        width: 500px;
+        height: auto;
+    }
+    .top-side {
+        width: 400px;
+        height: auto;
+        padding-left: 30px;
+        padding-top: 240px;
+    }
+    .store-row {
+        display: flex;
+    }
+    .pro-grid {
+        grid-template-columns: auto auto auto;
+        width: 900px;
+    }
+    .pro {
+        width: 280px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 600px) {
+    .top-bar {
+        display: none;
+    }
+    .m-head {
+        display: none;
+    }
+    .top-img {
+        width: 500px;
+        height: auto;
+    }
+    .top-side {
+        width: 400px;
+        height: auto;
+        padding-left: 30px;
+        padding-top: 240px;
+        color: white;
+    }
+    .store-row {
+        display: flex;
+    }
+    .pro-grid {
+        grid-template-columns: auto auto;
+        width: 600px;
+    }
+    .pro {
+        width: 280px;
+        height: 100%;
+        color: white;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-img {
+        width: calc(100vw - 20px);
+        margin-top: 40px;
+    }
+    .row-bd {
+        display: none;
+    }
+    .top-h {
+        padding-top: 12px;
+    }
+}
+
+a {
+    color: white;
+}
+
+body {
+    background-color: #111;
+}

@@ -1,0 +1,41 @@
+{% extends "base.htm" %} {% block productEDIT %}
+
+<div class="o-top">
+    <div class="row">
+        <div style="color: black; font-weight: 700;font-size:28px;padding-left:10px" class="s-item">Add Product</div>
+    </div>
+</div>
+<div class="o-base">
+    <div style="height: 136px;"></div>
+    <form action="" method="post" style="margin-top: 10px;">
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Image URL</div>
+                <input class="inpo" type="text" placeholder="enter your product's image url" name="img">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Name</div>
+                <input class="inpo" type="text" placeholder="enter your product's name" name="name">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Price</div>
+                <input class="inpo" type="text" placeholder="enter your product's price in INR" name="val">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Discrption</div>
+                <input class="inpo" type="text" placeholder="enter your product's discription" name="dis">
+            </div>
+        </div>
+        <div class="row-a">
+            <Button class="f-sub">Add</Button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

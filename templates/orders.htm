@@ -1,0 +1,31 @@
+{% extends "base.htm" %} {% block orders %}
+
+<div class="o-top">
+    <div class="row">
+        <span style="color: black;" class="material-symbols-outlined bbb">list_alt</span>
+        <div style="color: black; font-weight: 700;font-size:28px" class="s-item">Orders</div>
+    </div>
+</div>
+<div class="o-base">
+    <div style="height:60px;"></div>
+    {% for i in data %}
+    <div class="row-a">
+        <div class="pp">
+            <div class="row-b">
+                <div class="row">
+                    <img class="p-saam" src="{{ i[4] }}" alt="">
+                    <div style="width:20px"></div>
+                    <div>
+                        <div class="p-naam">{{ i[3]}}</div>
+                        <div class="p-daam">Price: {{ i[5] }}</div>
+                        <div class="p-daam">email: {{ i[6] }}</div>
+                    </div>
+                </div>
+                <a href="/{{aaa}}/delete-order/{{i[1]}}/{{i[0]}}" class="material-symbols-outlined saasy">delete</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div style="height:60px;"></div>
+{% endblock %}

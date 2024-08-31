@@ -1,0 +1,53 @@
+{% extends "base.htm" %} {% block home %}
+
+<div class="p-top">
+    <div class="row">
+        <span style="color: black;" class="material-symbols-outlined bbb">home</span>
+        <div style="color: black; font-weight: 700;font-size:28px" class="s-item">Home</div>
+    </div>
+</div>
+<div class="p-base">
+    <div style="height: 50px;"></div>
+    <div class="row-a">
+        <div style="font-weight: 600; font-size:28px;padding-bottom: 10px">Theme</div>
+    </div>
+    <div class="row-e">
+        <img id="t1" class="thee" src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/4a29cec7-6c6d-489f-a0c2-ebc7cb5ccada/koretailsinglepage_desktopPortrait1.jpg" alt="">
+        <img id="t2" class="thee" src="https://img1.wsimg.com/cdn/Image/All/FOS-Intl/1/en-US/c1dbe9ac-c9a7-4795-83d5-0eb365b2cbef/koretailelectronicstemplate_desktopPortrait1.jpg" alt="">
+    </div>
+    <div class="row-a">
+        <div style="padding-top: 12px;color:grey;">choose anyone of the above you like as your store's theme </div>
+    </div>
+    <form action="" method="post">
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Image URL</div>
+                <input class="inpo" type="text" placeholder="enter your store's leading image url" value="{{ data[2] }}" name="img">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Heading</div>
+                <input class="inpo" type="text" placeholder="enter your store's leading heading" value="{{ data[3] }}" name="txt">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Theme</div>
+                <input class="inpo" type="text" placeholder="enter your store's theme number" value="{{ data[4] }}" name="theme">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Sub Heading</div>
+                <input class="inpo" type="text" placeholder="enter your store's leading sub-heading" value="{{ data[5] }}" name="text">
+            </div>
+        </div>
+        <div class="row-a">
+            <Button type="submit" class="f-sub">Submit</Button>
+        </div>
+    </form>
+</div>
+</div>
+
+{% endblock %}

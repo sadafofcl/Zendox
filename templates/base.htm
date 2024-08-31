@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/static/css/khukari.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="/static/css/base..css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/orders.css">
+    <link rel="stylesheet" href="/static/css/products.css">
+    <link rel="stylesheet" href="/static/css/productE.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <section class="side-menu">
+        <div class="row-a">
+            <img class="b-img" src="/static/icon.jpg" alt="">
+        </div>
+
+        <div style="margin-top: 20px;">
+            <a class="qwer" href="/{{ aaa }}" target="_blank">Visit Store</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <a class="qwer" href="/{{ aaa }}/edit/home">Home</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="/{{ aaa }}/edit/orders" class="qwer">Orders</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="/{{ aaa }}/edit/products" class="qwer">Products</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="/{{ aaa }}/edit/customers" class="qwer">Customers</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <a href="/{{ aaa }}/logout" class="qwer">Logout</a>
+        </div>
+    </section>
+
+    {%block home%}{% endblock %} {%block orders%}{% endblock %} {%block products%}{% endblock %} {%block customers%}{% endblock %} {%block settings%}{% endblock %}{% block productEDIT %} {% endblock %}{% block productADD %} {% endblock %}
+
+
+</body>
+
+</html>

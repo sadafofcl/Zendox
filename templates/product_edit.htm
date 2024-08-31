@@ -1,0 +1,57 @@
+{% extends "base.htm" %} {% block productEDIT %}
+
+<div class="o-top">
+    <div class="row">
+        <div style="color: black; font-weight: 700;font-size:28px;padding-left:10px" class="s-item">Edit Product</div>
+    </div>
+</div>
+<div class="o-base">
+    <div style="height: 100px;"></div>
+    <div class="row-e">
+        <div class="c-cc">
+            <div class="row" style="margin: 10px;font-weight:600;">
+                <div>product id :</div>
+                <div>1982</div>
+            </div>
+        </div>
+        <div class="c-cc">
+            <div class="row" style="margin: 10px;font-weight:600;">
+                <div>stor id :</div>
+                <div>1889</div>
+            </div>
+        </div>
+    </div>
+    <div style="height:36px"></div>
+    <form action="" method="post" style="margin-top: 10px;">
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Image URL</div>
+                <input class="inpo" type="text" placeholder="enter your product's image url" name="img" value="{{data[3]}}">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Name</div>
+                <input class="inpo" type="text" placeholder="enter your product's name" name="name" value="{{data[2]}}">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Price</div>
+                <input class="inpo" type="text" placeholder="enter your product's price in INR" name="val" value="{{data4}}">
+            </div>
+        </div>
+        <div class="row-a">
+            <div>
+                <div style="font-weight: 600;font-size:26px;padding-bottom:6px;">Discrption</div>
+                <input class="inpo" type="text" placeholder="enter your product's discription" name="dis" value="{{data[5]}}">
+            </div>
+        </div>
+        <div class="row-a">
+            <Button type="submit" class="f-sub">Submit</Button>
+        </div>
+    </form>
+</div>
+</div>
+
+{% endblock %}
